@@ -18,6 +18,7 @@ const deploy = async () => {
     .deploy({ data: bytecode }) // create deploy object
     .send({ from: accounts[0], gas: 1000000 }) // send to network
 
+  console.log(interface)
   console.log('Contract deployed to', result.options.address)
   // Contract deployed to 0xFaa2774B6D579b986a47C97b2E881175a5ae1760
 }
